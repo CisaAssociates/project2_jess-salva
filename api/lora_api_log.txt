@@ -1,0 +1,244 @@
+[2025-05-19 03:39:42] Database error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '101' for key 'nodes.PRIMARY'
+[2025-05-19 03:40:03] Database error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '101' for key 'nodes.PRIMARY'
+[2025-05-19 03:40:23] Database error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '101' for key 'nodes.PRIMARY'
+[2025-05-19 03:40:43] Database error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '101' for key 'nodes.PRIMARY'
+[2025-05-19 03:41:04] Database error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '101' for key 'nodes.PRIMARY'
+[2025-05-19 03:41:24] Database error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '101' for key 'nodes.PRIMARY'
+[2025-05-19 03:41:44] Database error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '101' for key 'nodes.PRIMARY'
+[2025-05-19 03:42:05] Database error: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '101' for key 'nodes.PRIMARY'
+[2025-05-19 03:42:25] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:42:45] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:43:06] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:43:26] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:43:47] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:44:07] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:44:27] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:44:48] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:45:08] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:45:28] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:45:48] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:46:09] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:46:29] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:46:50] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:47:10] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:47:30] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:47:50] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:48:11] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:48:31] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bullying_iot.nodes' doesn't exist
+[2025-05-19 03:48:52] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date' in 'field list'
+[2025-05-19 03:49:12] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date' in 'field list'
+[2025-05-19 03:49:32] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date' in 'field list'
+[2025-05-19 03:49:53] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date' in 'field list'
+[2025-05-19 03:50:13] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date' in 'field list'
+[2025-05-19 03:50:33] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date' in 'field list'
+[2025-05-19 03:51:05] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date' in 'field list'
+[2025-05-19 03:51:26] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date' in 'field list'
+[2025-05-19 03:52:26] Database error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-05-19 03:52:47] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date' in 'field list'
+[2025-05-19 03:53:07] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 03:53:27] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 03:53:39] Missing required data in request: null
+[2025-05-19 03:56:51] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 03:57:11] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 03:57:32] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 03:57:52] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 03:58:12] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 03:58:33] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 03:58:53] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 03:59:13] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 03:59:34] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 03:59:54] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 04:00:14] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 04:00:35] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 04:00:55] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 04:01:15] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 04:02:58] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 04:03:18] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 04:03:39] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 04:03:59] Database error: SQLSTATE[HY000]: General error: 1364 Field 'node_name' doesn't have a default value
+[2025-05-19 04:04:19] Database error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-05-19 04:04:40] Database error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-05-19 04:05:00] Database error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-05-19 04:05:20] Data successfully inserted for node 101
+[2025-05-19 04:05:40] Data successfully inserted for node 101
+[2025-05-19 04:06:01] Data successfully inserted for node 101
+[2025-05-19 04:06:22] Data successfully inserted for node 101
+[2025-05-19 04:13:01] Data successfully inserted for node 101
+[2025-05-19 04:13:44] Data successfully inserted for node 101
+[2025-05-19 04:14:04] Data successfully inserted for node 101
+[2025-05-19 04:14:37] Data successfully inserted for node 101
+[2025-05-19 04:14:57] Data successfully inserted for node 101
+[2025-05-19 04:15:40] Data successfully inserted for node 101
+[2025-05-19 04:16:00] Data successfully inserted for node 101
+[2025-05-19 04:16:20] Data successfully inserted for node 101
+[2025-05-19 04:16:40] Data successfully inserted for node 101
+[2025-05-19 04:17:00] Data successfully inserted for node 101
+[2025-05-19 04:17:20] Data successfully inserted for node 101
+[2025-05-19 04:17:53] Data successfully inserted for node 101
+[2025-05-19 04:18:13] Data successfully inserted for node 101
+[2025-05-19 04:18:33] Data successfully inserted for node 101
+[2025-05-19 04:18:54] Data successfully inserted for node 101
+[2025-05-19 04:19:14] Data successfully inserted for node 101
+[2025-05-19 04:19:34] Data successfully inserted for node 101
+[2025-05-19 04:20:06] Data successfully inserted for node 101
+[2025-05-19 04:20:26] Data successfully inserted for node 101
+[2025-05-19 04:20:46] Data successfully inserted for node 101
+[2025-05-19 04:21:06] Data successfully inserted for node 101
+[2025-05-19 04:21:26] Data successfully inserted for node 101
+[2025-05-19 04:21:46] Data successfully inserted for node 101
+[2025-05-19 04:22:06] Data successfully inserted for node 101
+[2025-05-19 04:22:27] Data successfully inserted for node 101
+[2025-05-19 04:22:47] Data successfully inserted for node 101
+[2025-05-19 04:23:07] Data successfully inserted for node 101
+[2025-05-19 04:23:27] Data successfully inserted for node 101
+[2025-05-19 04:23:47] Data successfully inserted for node 101
+[2025-05-19 04:24:08] Data successfully inserted for node 101
+[2025-05-19 04:24:28] Data successfully inserted for node 101
+[2025-05-19 04:24:48] Data successfully inserted for node 101
+[2025-05-19 04:25:09] Data successfully inserted for node 101
+[2025-05-19 04:25:29] Data successfully inserted for node 101
+[2025-05-19 04:25:49] Data successfully inserted for node 101
+[2025-05-19 04:26:09] Data successfully inserted for node 101
+[2025-05-19 04:26:29] Data successfully inserted for node 101
+[2025-05-19 04:26:49] Data successfully inserted for node 101
+[2025-05-19 04:27:09] Data successfully inserted for node 101
+[2025-05-19 04:27:30] Data successfully inserted for node 101
+[2025-05-19 04:27:50] Data successfully inserted for node 101
+[2025-05-19 04:28:11] Data successfully inserted for node 101
+[2025-05-19 04:28:31] Data successfully inserted for node 101
+[2025-05-19 04:28:52] Data successfully inserted for node 101
+[2025-05-19 04:29:12] Data successfully inserted for node 101
+[2025-05-19 04:29:32] Data successfully inserted for node 101
+[2025-05-19 04:29:52] Data successfully inserted for node 101
+[2025-05-19 04:30:12] Data successfully inserted for node 101
+[2025-05-19 04:30:33] Data successfully inserted for node 101
+[2025-05-19 04:30:52] Data successfully inserted for node 101
+[2025-05-19 04:31:12] Data successfully inserted for node 101
+[2025-05-19 04:31:32] Data successfully inserted for node 101
+[2025-05-19 04:31:53] Data successfully inserted for node 101
+[2025-05-19 04:32:13] Data successfully inserted for node 101
+[2025-05-19 04:32:33] Data successfully inserted for node 101
+[2025-05-19 04:32:54] Data successfully inserted for node 101
+[2025-05-19 04:33:14] Data successfully inserted for node 101
+[2025-05-19 04:33:34] Data successfully inserted for node 101
+[2025-05-19 04:33:55] Data successfully inserted for node 101
+[2025-05-19 04:34:15] Data successfully inserted for node 101
+[2025-05-19 04:34:35] Data successfully inserted for node 101
+[2025-05-19 04:34:56] Data successfully inserted for node 101
+[2025-05-19 04:35:16] Data successfully inserted for node 101
+[2025-05-19 04:35:36] Data successfully inserted for node 101
+[2025-05-19 04:35:57] Data successfully inserted for node 101
+[2025-05-19 04:36:17] Data successfully inserted for node 101
+[2025-05-19 04:36:37] Data successfully inserted for node 101
+[2025-05-19 04:36:57] Data successfully inserted for node 101
+[2025-05-19 04:37:18] Data successfully inserted for node 101
+[2025-05-19 04:37:38] Data successfully inserted for node 101
+[2025-05-19 04:37:58] Data successfully inserted for node 101
+[2025-05-19 04:38:19] Data successfully inserted for node 101
+[2025-05-19 04:38:39] Data successfully inserted for node 101
+[2025-05-19 04:39:00] Data successfully inserted for node 101
+[2025-05-19 04:39:20] Data successfully inserted for node 101
+[2025-05-19 04:39:40] Data successfully inserted for node 101
+[2025-05-19 04:40:01] Data successfully inserted for node 101
+[2025-05-19 04:40:22] Data successfully inserted for node 101
+[2025-05-19 04:40:42] Data successfully inserted for node 101
+[2025-05-19 04:41:02] Data successfully inserted for node 101
+[2025-05-19 04:41:23] Data successfully inserted for node 101
+[2025-05-19 04:41:43] Data successfully inserted for node 101
+[2025-05-19 04:42:39] Data successfully inserted for node 101
+[2025-05-19 04:42:59] Data successfully inserted for node 101
+[2025-05-19 04:43:19] Data successfully inserted for node 101
+[2025-05-19 04:43:39] Data successfully inserted for node 101
+[2025-05-19 04:46:08] Data successfully inserted for node 101
+[2025-05-19 04:46:41] Data successfully inserted for node 101
+[2025-05-19 04:47:02] Data successfully inserted for node 101
+[2025-05-19 04:47:22] Data successfully inserted for node 101
+[2025-05-19 04:49:18] Data successfully inserted for node 101
+[2025-05-19 04:50:36] Data successfully inserted for node 101
+[2025-05-19 04:50:57] Data successfully inserted for node 101
+[2025-05-19 04:51:17] Data successfully inserted for node 101
+[2025-05-19 04:51:37] Data successfully inserted for node 101
+[2025-05-19 04:51:57] Data successfully inserted for node 101
+[2025-05-19 04:52:18] Data successfully inserted for node 101
+[2025-05-19 04:52:38] Data successfully inserted for node 101
+[2025-05-19 04:52:58] Data successfully inserted for node 101
+[2025-05-19 04:53:55] Data successfully inserted for node 101
+[2025-05-19 04:54:15] Data successfully inserted for node 101
+[2025-05-19 04:54:35] Data successfully inserted for node 101
+[2025-05-19 04:55:21] Data successfully inserted for node 101
+[2025-05-19 04:55:41] Data successfully inserted for node 101
+[2025-05-19 04:56:01] Data successfully inserted for node 101
+[2025-05-19 04:56:21] Data successfully inserted for node 101
+[2025-05-19 04:56:41] Data successfully inserted for node 101
+[2025-05-19 04:57:02] Data successfully inserted for node 101
+[2025-05-19 04:57:22] Data successfully inserted for node 101
+[2025-05-19 04:57:42] Data successfully inserted for node 101
+[2025-05-19 04:58:03] Data successfully inserted for node 101
+[2025-05-19 04:58:23] Data successfully inserted for node 101
+[2025-05-19 04:58:43] Data successfully inserted for node 101
+[2025-05-19 04:59:03] Data successfully inserted for node 101
+[2025-05-19 04:59:23] Data successfully inserted for node 101
+[2025-05-19 04:59:44] Data successfully inserted for node 101
+[2025-05-19 05:00:04] Data successfully inserted for node 101
+[2025-05-19 05:00:24] Data successfully inserted for node 101
+[2025-05-19 05:00:44] Data successfully inserted for node 101
+[2025-05-19 05:01:04] Data successfully inserted for node 101
+[2025-05-19 05:01:25] Data successfully inserted for node 101
+[2025-05-19 05:01:45] Data successfully inserted for node 101
+[2025-05-19 05:02:06] Data successfully inserted for node 101
+[2025-05-19 05:02:26] Data successfully inserted for node 101
+[2025-05-19 05:02:46] Data successfully inserted for node 101
+[2025-05-19 05:03:06] Data successfully inserted for node 101
+[2025-05-19 05:03:27] Data successfully inserted for node 101
+[2025-05-19 05:03:47] Data successfully inserted for node 101
+[2025-05-19 05:04:07] Data successfully inserted for node 101
+[2025-05-19 05:04:28] Data successfully inserted for node 101
+[2025-05-19 05:04:48] Data successfully inserted for node 101
+[2025-05-19 05:05:08] Data successfully inserted for node 101
+[2025-05-19 05:05:29] Data successfully inserted for node 101
+[2025-05-19 05:05:49] Data successfully inserted for node 101
+[2025-05-19 05:06:21] Data successfully inserted for node 101
+[2025-05-19 05:06:42] Data successfully inserted for node 101
+[2025-05-19 05:07:02] Data successfully inserted for node 101
+[2025-05-19 05:07:22] Data successfully inserted for node 101
+[2025-05-19 05:07:43] Data successfully inserted for node 101
+[2025-05-19 05:08:03] Data successfully inserted for node 101
+[2025-05-19 05:08:24] Data successfully inserted for node 101
+[2025-05-19 05:08:44] Data successfully inserted for node 101
+[2025-05-19 05:09:05] Data successfully inserted for node 101
+[2025-05-19 05:09:24] Data successfully inserted for node 101
+[2025-05-19 05:09:45] Data successfully inserted for node 101
+[2025-05-19 05:10:06] Data successfully inserted for node 101
+[2025-05-19 05:10:26] Data successfully inserted for node 101
+[2025-05-19 05:10:46] Data successfully inserted for node 101
+[2025-05-19 05:11:06] Data successfully inserted for node 101
+[2025-05-19 05:11:27] Data successfully inserted for node 101
+[2025-05-19 05:11:47] Data successfully inserted for node 101
+[2025-05-19 05:12:07] Data successfully inserted for node 101
+[2025-05-19 05:12:27] Data successfully inserted for node 101
+[2025-05-19 05:12:47] Data successfully inserted for node 101
+[2025-05-19 05:13:08] Data successfully inserted for node 101
+[2025-05-19 05:13:28] Data successfully inserted for node 101
+[2025-05-19 05:13:48] Data successfully inserted for node 101
+[2025-05-19 05:14:09] Data successfully inserted for node 101
+[2025-05-19 05:14:29] Data successfully inserted for node 101
+[2025-05-19 05:14:49] Data successfully inserted for node 101
+[2025-05-19 05:15:09] Data successfully inserted for node 101
+[2025-05-19 05:15:30] Data successfully inserted for node 101
+[2025-05-19 05:15:50] Data successfully inserted for node 101
+[2025-05-19 05:16:10] Data successfully inserted for node 101
+[2025-05-19 05:16:30] Data successfully inserted for node 101
+[2025-05-19 05:16:50] Data successfully inserted for node 101
+[2025-05-19 05:17:10] Data successfully inserted for node 101
+[2025-05-19 05:17:31] Data successfully inserted for node 101
+[2025-05-19 05:17:51] Data successfully inserted for node 101
+[2025-05-19 05:18:12] Data successfully inserted for node 101
+[2025-05-19 05:18:32] Data successfully inserted for node 101
+[2025-05-19 05:18:52] Data successfully inserted for node 101
+[2025-05-19 05:19:13] Data successfully inserted for node 101
+[2025-05-19 05:19:33] Data successfully inserted for node 101
+[2025-05-19 05:19:53] Data successfully inserted for node 101
+[2025-05-19 05:20:13] Data successfully inserted for node 101
+[2025-05-19 05:20:34] Data successfully inserted for node 101
+[2025-05-19 05:20:54] Data successfully inserted for node 101
+[2025-05-19 05:21:15] Data successfully inserted for node 101
