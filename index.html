@@ -430,7 +430,7 @@
         // Fetch data from API
         async function fetchLocationData() {
             try {
-                const response = await fetch('http://localhost/bully/api/get_location.php');
+                const response = await fetch('https://project2.slsuisa.com/jess-salva/api/get_location.php');
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
