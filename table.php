@@ -1,14 +1,18 @@
-<?php 
+<?php
 
 include './config.php';
 
-try{
-    $node_id = 101;
-    $sql = "DELETE FROM nodes WHERE node_id = :node_id ";
-    $stmt = $conn->prepare($sql);
-    $stmt->bindParam(":node_id",$node_id,PDO::PARAM_INT);
-    $stmt->execute();
+$sql = "SELECT n.*
+            FROM nodes n
+            JOIN (
+                SELECT node_id, MAX(datetime) AS latest_time
+                FROM nodes
+                GROUP BY node_id
+            ) latest
+            ON n.node_id = latest.node_id AND n.datetime = latest.latest_time";
 
-}catch(PDOException $e){
-    echo "Message".$e->getMessage();
-}
+$stmt = $conn->prepare($sql);
+$stmt->execute();
+
+$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+print_r($results);
