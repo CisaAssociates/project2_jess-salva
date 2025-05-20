@@ -2,11 +2,14 @@
 
 include "./config.php";
 
-$sql = "SELECT id, node_id, datetime, node_name, latitude, longitude, state
-FROM nodes
-WHERE node_id = 101
-ORDER BY datetime DESC
-LIMIT 5; -- Or a larger number to see recent history ";
+$sql = "SELECT n.*
+FROM nodes n
+JOIN (
+    SELECT node_id, MAX(id) AS latest_id
+    FROM nodes
+    GROUP BY node_id
+) latest_entry
+ON n.node_id = latest_entry.node_id AND n.id = latest_entry.latest_id;";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
