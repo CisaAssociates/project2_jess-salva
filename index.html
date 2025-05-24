@@ -118,6 +118,11 @@
         .device-card.alert {
             border-left: 4px solid #ff3333;
         }
+        .device-card.not-active {
+            opacity: 0.6;
+            background-color: #f0f0f0;
+            border-left: 4px solid #999;
+        }
         .device-header {
             display: flex;
             justify-content: space-between;
@@ -142,6 +147,10 @@
             background-color: #f8d7da;
             color: #721c24;
             animation: pulse-text 2s infinite;
+        }
+        .device-card.not-active .device-status {
+            background-color: #e0e0e0;
+            color: #555;
         }
         .device-details {
             font-size: 13px;
@@ -316,12 +325,12 @@
                         <option value="all">All Status</option>
                         <option value="1">Normal</option>
                         <option value="0">Alert</option>
+                        <option value="inactive">Inactive</option>
                     </select>
                 </div>
             </div>
             <div class="device-list" id="deviceList">
-                <!-- Device cards will be populated here -->
-            </div>
+                </div>
             <div class="dashboard">
                 <h3>Dashboard</h3>
                 <div class="stats-container">
@@ -437,7 +446,6 @@
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
                 const data = await response.json();
-                console.log(data);
                 
                 if (data.status == 'success') {
                     processLocationData(data.data);
@@ -449,7 +457,7 @@
                 console.error('Error fetching location data:', error);
             }
         }
-
+        
         // Process and update map with location data
         function processLocationData(locations) {
             const currentMarkerIds = new Set();
@@ -671,9 +679,8 @@
             const deviceList = document.getElementById('deviceList');
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
             const statusFilter = document.getElementById('filterStatus').value;
+            const currentTime = new Date();
             
-            // Clear current list
-            // Instead of clearing and rebuilding, we'll update existing cards and add new ones
             const existingCards = {};
             Array.from(deviceList.children).forEach(card => {
                 const deviceId = card.dataset.deviceId;
@@ -682,32 +689,33 @@
                 }
             });
             
-            // Process each location
             locations.forEach(location => {
                 const id = location.node_id;
                 const isAlert = location.state == "0";
-                const date = new Date(location.datetime);
-                const formattedTime = date.toLocaleTimeString();
+                const lastUpdateDate = new Date(location.datetime);
+                const formattedTime = lastUpdateDate.toLocaleTimeString();
                 
-                // Check if we should show this device based on filters
+                // Calculate the difference in minutes
+                const timeDifference = (currentTime.getTime() - lastUpdateDate.getTime()) / (1000 * 60);
+                const isActive = timeDifference <= 2;
+                
                 const matchesSearch = location.node_name.toLowerCase().includes(searchTerm) || 
-                                     id.toString().includes(searchTerm);
+                                        id.toString().includes(searchTerm);
                 const matchesStatus = statusFilter == 'all' || location.state == statusFilter;
                 const shouldShow = matchesSearch && matchesStatus;
                 
                 if (existingCards[id]) {
-                    // Update existing card
                     const card = existingCards[id];
                     
                     // Update classes
-                    card.className = `device-card ${isAlert ? 'alert' : ''}`;
+                    card.className = `device-card ${isAlert ? 'alert' : ''} ${!isActive ? 'not-active' : ''}`;
                     
                     // Update content
                     card.innerHTML = `
                         <div class="device-header">
                             <div class="device-name">${location.node_name}</div>
                             <div class="device-status ${isAlert ? 'status-alert' : 'status-normal'}">
-                                ${isAlert ? 'ALERT' : 'Normal'}
+                                ${isAlert ? 'ALERT' : (isActive ? 'Normal' : 'Inactive')}
                             </div>
                         </div>
                         <div class="device-details">
@@ -727,13 +735,13 @@
                 } else {
                     // Create new card
                     const deviceCard = document.createElement('div');
-                    deviceCard.className = `device-card ${isAlert ? 'alert' : ''}`;
+                    deviceCard.className = `device-card ${isAlert ? 'alert' : ''} ${!isActive ? 'not-active' : ''}`;
                     deviceCard.dataset.deviceId = id;
                     deviceCard.innerHTML = `
                         <div class="device-header">
                             <div class="device-name">${location.node_name}</div>
                             <div class="device-status ${isAlert ? 'status-alert' : 'status-normal'}">
-                                ${isAlert ? 'ALERT' : 'Normal'}
+                                ${isAlert ? 'ALERT' : (isActive ? 'Normal' : 'Inactive')}
                             </div>
                         </div>
                         <div class="device-details">
@@ -764,14 +772,28 @@
         function filterDevices() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
             const statusFilter = document.getElementById('filterStatus').value;
+            const currentTime = new Date();
             
             const deviceCards = document.querySelectorAll('.device-card');
             deviceCards.forEach(card => {
                 const deviceName = card.querySelector('.device-name').textContent.toLowerCase();
                 const deviceId = card.dataset.deviceId;
-                const isAlert = card.classList.contains('alert');
-                const deviceStatus = isAlert ? "0" : "1";
+                const lastUpdateText = card.querySelector('.device-details div:nth-child(2)').textContent.replace('Last update: ', '');
+                const lastUpdateDate = new Date(lastUpdateText);
                 
+                const timeDifference = (currentTime.getTime() - lastUpdateDate.getTime()) / (1000 * 60);
+                const isActive = timeDifference <= 2;
+                
+                // Determine the status for filtering based on the 'isActive' flag
+                let deviceStatus;
+                if (!isActive) {
+                    deviceStatus = "inactive"; // Treat as 'inactive' status
+                } else if (card.classList.contains('alert')) {
+                    deviceStatus = "0"; // Alert
+                } else {
+                    deviceStatus = "1"; // Normal
+                }
+
                 const matchesSearch = deviceName.includes(searchTerm) || deviceId.includes(searchTerm);
                 const matchesStatus = statusFilter == 'all' || deviceStatus == statusFilter;
                 
@@ -826,7 +848,7 @@
             // Compare two positions with a small threshold to account for floating point errors
             const threshold = 0.0000001;
             return Math.abs(pos1[0] - pos2[0]) < threshold && 
-                   Math.abs(pos1[1] - pos2[1]) < threshold;
+                           Math.abs(pos1[1] - pos2[1]) < threshold;
         }
         
         function createMapLayerControl() {
